@@ -1,0 +1,33 @@
+#lbox
+{
+width:50px;
+
+float:left;
+background:red;
+margin:0 10px 0 30px;
+}
+#mbox
+{
+width:590px;
+
+float:left;
+margin:0 10px 0 0;
+background:#fff;
+}
+#rbox
+{
+width:250px;
+background:red; 
+float:left;
+}
+.profile_pic
+{
+float:left;
+width:50px;
+height:50px;
+}
+.big_thumbnail
+{
+width:100px;
+height:100px;
+}

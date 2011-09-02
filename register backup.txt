@@ -1,0 +1,70 @@
+
+
+<?php 
+ // Connects to your Database 
+
+ mysql_connect("localhost", "root", "") or die(mysql_error()); 
+
+ mysql_select_db("acetpulse") or die(mysql_error()); 
+
+
+ //This code runs if the form has been submitted
+
+
+
+
+ $usercheck = $_POST['username'];
+
+ $check = mysql_query("SELECT username FROM users WHERE username = '$usercheck'") 
+
+ or die(mysql_error());
+
+ $check2 = mysql_num_rows($check);
+
+
+
+ //if the name exists it gives an error
+
+ if ($check2 != 0) {
+
+ 		die('Sorry, the username '.$_POST['username'].' is already in use.');
+
+ 				}
+
+
+ // this makes sure both passwords entered match
+
+ 	if ($_POST['pass'] != $_POST['pass2']) {
+
+ 		die('Your passwords did not match. ');
+
+ 	}
+
+
+
+ /*	// here we encrypt the password and add slashes if needed
+
+ 	$_POST['pass'] = md5($_POST['pass']);
+
+
+
+
+
+ // now we insert it into the database
+
+ 	$insert = "INSERT INTO users (username, password, email, user_type)
+
+ 		VALUES ('".$_POST['username']."', '".$_POST['pass']."', '".$_POST['email']."', '".$_POST['acc_type']."')";
+//	$dep_insert = "INSERT INTO department (dep_name) VALUES('".$_POST['menu1']."')"; 
+
+ 	$add_member = mysql_query($insert);
+	
+	$hour=time()+36000;
+	setcookie('username',$email,$hour);
+	setcookie('password',$password,$hour);
+	header("location:members.php");
+//	$add_department=mysql_query($dep_insert);
+	
+*/
+ 	
+?>
