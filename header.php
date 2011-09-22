@@ -12,10 +12,16 @@
   <div id="container">
     <header>
 	<img src="img/logo_small.gif" alt="Acet Pulse" />
+	
+	
 	<ul id = "nav">
 	<li><a href = "home.php">Home</a></li>
-	<li><a href = "profile.php">Profile</a></li>
+	<li><a href = "profile.php?id=<?php echo $id ?>">Profile</a></li>
 	<li><a href = "edit_profile.php">Settings</a></li>
 	<li><a href = "logout.php">Sign Out</a></li>
 	</ul>
+
+	
+	
+	
 	</header>

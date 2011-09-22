@@ -81,8 +81,12 @@ if( isset($_POST) )
 			/* INSERTING DATA IN DATABASE */
 			$query="insert into users (username,password,email,user_type) values('$username','$password','$email','$acc_type')";
 			$insert=mysql_query($query);
-			$hour=time()+36000;
-			setcookie('username',$username,$hour);
+			$query = mysql_query("Select * from users where username = '$username'");
+			$info = mysql_fetch_array($query);
+			$id = $info['user_id'];
+			
+			$hour=time()+3600000;
+			setcookie('id',$id,$hour);
 			setcookie('password',$password,$hour);
 			header('location:edit_profile.php');
 		}

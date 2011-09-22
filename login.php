@@ -5,13 +5,13 @@ include"connect_db.php";
 // Check for the existing cookie
 	if(isset($_COOKIE['username']))
 	{
-		$username = $_COOKIE['username'];
+		$id = $_COOKIE['id'];
 		$password = $_COOKIE['password'];
 		header("Location: home.php");
 	}
 	else
 	{
-		$username = $_POST['username'];
+		$login = $_POST['username'];
 		$password = $_POST['password'];
 		
 		if( isset($_POST) )
@@ -21,7 +21,7 @@ include"connect_db.php";
 			$formok = true;  
 			
 			//validate username is not empty  
-			if(empty($username) ||  empty($password))
+			if(empty($login) ||  empty($password))
 			{  
 				$formok = false;  
 				echo "Fill in both username and password fields"; 
@@ -31,7 +31,7 @@ include"connect_db.php";
 		
 		if($formok)
 		{
-			$check = mysql_query("SELECT * FROM users WHERE username = '$username'");
+			$check = mysql_query("SELECT * FROM users WHERE username = '$login'");
 			$check2 = mysql_num_rows($check);
 			if($check2 == 0)
 			{
@@ -45,14 +45,13 @@ include"connect_db.php";
 				}
 				else
 				{
-					setcookie('username',$username,$hour);
+					$id = $info['user_id'];
+					setcookie('id',$id,$hour);
 					setcookie('password',$password,$hour);
 					header('location:home.php');
 				}
 			}
 		}
-		
-		
 	}
 	
 	
