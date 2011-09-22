@@ -22,8 +22,8 @@
 		while($result = mysql_fetch_array($query))
 		{
 	?>
-		<li> <img src = "<?php echo $result['display_picture']; ?>" alt = "<?php echo  $username; ?>" class = "profile_pic" />
-		<a href = "profile.php?id=<?php echo $result['username'] ?>"><?php echo $result['name'];?></a></li>
+		<li> <img src = "<?php echo $result['display_picture']; ?>" alt = "<?php echo  $result['name'] ?>" class = "profile_pic" />
+		<a href = "profile.php?id=<?php echo $result['user_id'] ?>"><?php echo $result['name'];?></a></li>
 		
 	<?php
 		}

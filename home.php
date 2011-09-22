@@ -24,7 +24,8 @@
 		$connections = mysql_query("Select * from connections where user_id = '$user->id'");
 		while($info = mysql_fetch_array($connections))
 		{
-			
+			$person = new member($info['connection_id']);
+			echo "<a href = 'profile.php?id=$person->id'><img src = '$person->display_picture'/ width = 50></a>";
 		}
 	
 	
