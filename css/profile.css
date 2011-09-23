@@ -39,7 +39,7 @@
 }
 #mbox
 {
-	width:460px;
+	width:480px;
 	height:500px;
 	padding:20px;
 	float:left;
@@ -51,14 +51,23 @@
 
 #rbox
 {
-	width:250px;
+	width:190px;
 	float:left;
+	padding:20px;
 }
 .status-update
 {
 	width:450px;
 	height:30px;
 	resize:none;
+	margin-top:5px;
+	padding:5px;
+	border:1px solid #dedede;
+}
+.searchbox
+{
+	width:170px;
+	border:1px solid #dedede;
 }
 .profile_pic
 {

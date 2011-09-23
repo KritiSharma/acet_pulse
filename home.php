@@ -22,13 +22,12 @@
 		</script>
 	</div>
 	<div id = "mbox">
-		Update Your Status<br/>
+		<strong>Update Your Status</strong><br/>
 		<textarea class = "status-update"></textarea>
 	</div>
 	<div id = "rbox">
 		<form name = "search" method  = "post" action = "search.php">
 			<input type = "text" name = "search" class = "searchbox"/>
-			<input type= "submit" name="submit" class = "button" value = "Search">
 		</form>
 		<div >
 			Connections
