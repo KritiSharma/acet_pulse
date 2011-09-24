@@ -1,33 +1,84 @@
 #lbox
 {
-width:50px;
-
-float:left;
-background:red;
-margin:0 10px 0 30px;
+	width:200px;
+	float:left;
+	margin:0;
+}
+#lbox ul
+{
+	margin:0px;
+	padding:0px;
+}
+#lbox li
+{
+	list-style-type:none;
+}
+#lbox li img
+{
+	width:20px;
+	margin:0 5px 0 0;
+	height:20px;
+	float:left;
+}
+#lbox li:hover
+{
+	background:#f7f7f7;
+}
+#lbox li a
+{
+	text-decoration:none;
+	color:#505050;
+	margin:0 0 1px 0;
+	padding:5px 10px;
+	display:block;
+}
+.hilite
+{
+	background:#dedede;
+	font-weight:bold;
 }
 #mbox
 {
-width:590px;
-
-float:left;
-margin:0 10px 0 0;
-background:#fff;
+	width:480px;
+	height:500px;
+	padding:20px;
+	float:left;
+	margin:0;
+	background:#f7f7f7;
+	border:1px #dedede solid;
+	
 }
+
 #rbox
 {
-width:250px;
-
-float:left;
+	width:190px;
+	float:left;
+	padding:20px;
+}
+.status-update
+{
+	width:450px;
+	height:30px;
+	resize:none;
+	margin-top:5px;
+	padding:5px;
+	border:1px solid #dedede;
+}
+.searchbox
+{
+	width:170px;
+	border:1px solid #dedede;
 }
 .profile_pic
 {
-float:left;
-width:50px;
-height:50px;
+	width:50px;
+	height:50px;
+	margin:10px;
+	vertical-align:middle;
 }
+
 .big_thumbnail
 {
-width:100px;
-height:100px;
+	width:100px;
+	height:100px;
 }

@@ -40,14 +40,14 @@ $ext = findexts ($_FILES['pic']['name']) ;
 // Connects to your Database
 mysql_connect("localhost", "root", "") or die(mysql_error()) ;
 mysql_select_db("acetpulse") or die(mysql_error()) ;
-if(isset($_COOKIE['username']))
+if(isset($_COOKIE['id']))
 {
-$username = $_COOKIE['username'];
+$id = $_COOKIE['id'];
 
 //Writes the information to the database
 $query = " UPDATE users
 SET display_picture = '$target'
-WHERE username = '$username'";
+WHERE user_id = '$id'";
 $result = mysql_query($query);
 }
 if(move_uploaded_file($_FILES['pic']['tmp_name'], $target))
