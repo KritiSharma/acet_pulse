@@ -28,6 +28,7 @@
 	<div id = "rbox">
 		<form name = "search" method  = "post" action = "search.php">
 			<input type = "text" name = "search" class = "searchbox"/>
+			
 		</form>
 		<div >
 			Connections
