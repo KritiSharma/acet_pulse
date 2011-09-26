@@ -1,6 +1,5 @@
 <?php session_start() ?>
 <?php 
-//uuuuuuu
  if(isset($_COOKIE['id']))
  {
 	header("Location: home.php");

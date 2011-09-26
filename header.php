@@ -25,8 +25,4 @@
 	<li><a href = "edit_profile.php">Settings</a></li>
 	<li><a href = "logout.php">Sign Out</a></li>
 	</ul>
-
-	
-	
-	
-	</header>
+</header>
