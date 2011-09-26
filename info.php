@@ -13,6 +13,7 @@ class  member
 	public $designation;
 	public $experience;
 	public $qualification;
+	public $arr_connections;
 	
 	
 	function __construct($id)
@@ -54,6 +55,16 @@ class  member
 	function connect($id)
 	{
 		$connect = mysql_query("INSERT into connections values('$this->id','$id')") or die(mysql_error());
+	}
+	
+	function connections($id)
+	{
+		$query = mysql_query("Select * from connections where user_id = '$id'");
+		while($info = mysql_fetch_array($query))
+		{
+			$this->arr_connections[] = $info['connection_id'];
+		}
+		
 	}
 }
 ?>

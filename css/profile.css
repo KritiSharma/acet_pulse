@@ -40,12 +40,11 @@
 #mbox
 {
 	width:480px;
-	height:500px;
 	padding:20px;
 	float:left;
 	margin:0;
 	background:#f7f7f7;
-	border:1px #dedede solid;
+	border-left:1px #dedede solid;
 	
 }
 
@@ -55,12 +54,20 @@
 	float:left;
 	padding:20px;
 }
+
+#rbox .label
+{
+	display:block;
+	background:#dedede;
+	padding:5px;
+	margin:10px 0;
+}
 .status-update
 {
 	width:450px;
 	height:30px;
 	resize:none;
-	margin-top:5px;
+	margin:5px 0 15px;
 	padding:5px;
 	border:1px solid #dedede;
 }
@@ -81,4 +88,37 @@
 {
 	width:100px;
 	height:100px;
+}
+.updates
+{
+	margin:0px;
+	padding:0px;
+	
+}
+.updates li
+{
+	clear:both;
+	list-style-type:none;
+	display:block;
+	margin-bottom:4px;
+	background:#fff;
+	padding:5px;
+	font-size:12px;
+}
+.updates li p
+{
+	display:block;
+	padding:5px;
+}
+.updates img
+{
+	margin:3px 8px 3px 5px;
+	width:50px;
+	height:50px;
+	float:left;
+}
+.bold-name
+{
+	font-weight:bold;
+	font-size:12px;
 }

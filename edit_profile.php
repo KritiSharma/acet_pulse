@@ -6,7 +6,7 @@
 <p class = "y-label"> Edit Your Profile  </p>
 <form action = "update_profile.php" method = "post" name = "update_profile" id  = "editform" >
 	<h1> Basic Details </h1>
-	<label> Name <span class = "small">Enter Your Name</span>  </label><input type = "text" name = "name" class = "text" value = <?php echo $user->name; ?> />
+	<label> Name <span class = "small">Enter Your Name</span>  </label><input type = "text" name = "name" class = "text" value = "<?php echo $user->name; ?>" />
 	<label> Department <span class = "small">Select Your Department</span>  </label>
 	<select name = "department" value = "<?php echo $user->department; ?>">
 		<option>IT</option>

@@ -9,7 +9,6 @@
 	
 	<?php
 		$search = $_POST['search'];
-		
 		$query = mysql_query("Select * from users where name LIKE '%$search%'") or die(mysql_error());
 		$count = mysql_num_rows($query);
 		if($count == 0)
