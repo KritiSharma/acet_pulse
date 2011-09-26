@@ -42,8 +42,8 @@
 		
 	</div>
 	<div id = "rbox">
-		<form name = "search" method  = "post" action = "search.php">
-			<input type = "text" name = "search" class = "searchbox"/>
+		<form name = "search" method  = "post" action = "search.php" >
+			<input type = "text" name = "search" class = "searchbox" placeholder = "Search People"/>
 			
 		</form>
 		<span class = "label">Connections</span>
