@@ -3,6 +3,7 @@
 	width:200px;
 	float:left;
 	margin:0;
+	padding-top:30px;
 }
 #lbox ul
 {
@@ -43,7 +44,7 @@
 	padding:20px;
 	float:left;
 	margin:0;
-	background:#f7f7f7;
+	background:#fff url("img/bookfold.gif") repeat-y top right;
 	border-left:1px #dedede solid;
 	
 }
@@ -52,15 +53,16 @@
 {
 	width:190px;
 	float:left;
-	padding:20px;
+	padding:30px 20px;
 }
 
 #rbox .label
 {
 	display:block;
-	background:#dedede;
-	padding:5px;
-	margin:10px 0;
+	border-bottom:1px solid #dedede;
+	padding:0 5px 5px 0;
+	margin:10px 0 10px 2px;
+	font-weight:bold;
 }
 .status-update
 {
@@ -73,7 +75,9 @@
 }
 .searchbox
 {
-	width:170px;
+	width:180px;
+	padding:5px;
+	height:20px;
 	border:1px solid #dedede;
 }
 .profile_pic
